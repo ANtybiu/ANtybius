@@ -29,11 +29,11 @@ setInterval(() => {
     const reminderTime = new Date(reminder.datetime);
 
     if (
-      now.getFullYear() === reminderTime.getFullYear() &&
-      now.getMonth() === reminderTime.getMonth() &&
-      now.getDate() === reminderTime.getDate() &&
-      now.getHours() === reminderTime.getHours() &&
-      now.getMinutes() === reminderTime.getMinutes()
+      now.getFullYear() >= reminderTime.getFullYear() &&
+      now.getMonth() >= reminderTime.getMonth() &&
+      now.getDate() >= reminderTime.getDate() &&
+      now.getHours() >= reminderTime.getHours() &&
+      now.getMinutes() >= reminderTime.getMinutes()
     ) {
       showNotification(reminder.note);
       reminders.splice(index, 1); 
@@ -41,7 +41,7 @@ setInterval(() => {
   });
 
   localStorage.setItem("reminders", JSON.stringify(reminders));
-}, 60000);
+}, 1000);
 function showNotification(note) {
   if (Notification.permission === "granted") {
     new Notification("📚 Study Reminder", {
