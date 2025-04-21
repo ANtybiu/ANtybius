@@ -1,0 +1,21 @@
+{
+  "name": "Antybiu",
+  "short_name": "Antybiu",
+  "description": "A study assistant for reminders, kits, and focus tools.",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link href="app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div id="pfp"></div>
+      <div id="logo">ANTYBIU.</div>
+    </div>
+    <div id="main-body">
+      <div id="intro-text">Hi Zhihen,<br>
+        How can I help <br>you study today?
+        </div>
+      <div id="options">
+        <div class="options" id="reminder" onclick="reminderPopup()">
+          <img src="Reminder.png"  class="option-icon rm1">Reminder
+        </div>
+        <div class="options" id="study-kit">
+          <img src="book.png"  class="rm2 option-icon ">Study Kit
+        </div>
+        <div class="options" id="settings">
+          <img src="settings.png"  class="rm2 option-icon ">Settings
+        </div>
+        <div class="options" id="gpt">
+          <img src="gpt.png"  class="rm2 option-icon ">AntyGPT
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="reminder-popup">
+      <div style="display:flex;align-items: center;">
+        <img src="Reminder.png" id="reminder-img">Set a Study Reminder
+      </div>
+      <div id="datentime">
+        <div id="gae"><img src="timebook.png" id="timebook">Choose Date & Time</div>
+        <div id="duration-setting">
+          <input type="date" id="date" class="time-input">
+          <input type="time" id="time" class="time-input">
+        </div>
+        <div id="remarks-setting">
+          <div id="gae1"><img src="bars.png" id="bars">Additional Remarks</div>
+          <input class="time-input remarks-input" placeholder="Example: 'Biology Quiz'" id="note">
+        </div>
+
+        <div id="button-remark">
+          <div id="save-remark"><button class="qw qwe" onclick="saveReminder2()">Save reminder</button></div><div id="cancel"><button class="qw" onclick="closeReminder()">Cancel</button></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

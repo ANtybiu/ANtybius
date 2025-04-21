@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "mainfont";
+  src: url("asd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  font-size: 1vw;
+}
+body{
+  padding: 5rem;
+  font-family: 'roboto';
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+#header{
+  display:flex;
+  justify-content: space-between;
+}
+#pfp{
+  width: 10vw;
+  height: 10vw;
+  background-color: black;
+  border-radius: 100%;
+}
+#logo{
+  font-family: mainfont;
+  font-size: 7rem;
+}
+#intro-text{
+  width: 90vw;
+  font-size: 10rem;
+}
+#options{
+  margin-top: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+}
+.options{
+  width: 42vw;
+  height: 14vh;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:1rem;
+  font-size: 4.75rem;
+}
+#reminder{
+  background-color: rgb(222,235,247);
+}
+#study-kit{
+  background-color: rgb(237,237,237);
+}
+#settings{
+  background-color: rgb(226,240,217);
+}
+#gpt{
+  background-color: rgb(255,242,204);
+}
+.rm1{
+  width: 6rem;
+}
+.rm2{
+  width:9rem;
+  padding: 0;
+}
+.option-icon{
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 100rem;
+}
+#overlay{
+  width:100vw;
+  height:100vh;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top:0;
+  left:0;
+  display:none;
+}
+#reminder-popup{
+  width: 80vw;
+  height:max-content;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  left: 6.25vw;
+  top: 25vh;
+  border-radius: 7.5rem;
+  color: black;
+  font-size: 6rem;
+  display:none;
+  padding-left: 7.5vw;
+  padding-top: 10rem;
+  flex-direction: column;
+  background-color: rgb(250,250,250);
+  padding-bottom: 10rem;
+}
+#reminder-img{
+  width: 8rem;
+  height: 10rem;
+  margin-top: -2rem;
+  margin-right: 3rem;
+}
+#datentime{
+  font-size: 4rem;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+#timebook{
+  margin-left: 1rem;
+  width: 6rem;
+  margin-right: 3rem;
+}
+#gae{
+  display: flex;
+  align-items: center;
+}
+#duration-setting{
+  
+}
+.time-input{
+  width: 30rem;
+  height: 7rem;
+  font-size: 4rem;
+  margin-top: 2rem;
+  border-radius: 1.2rem;
+  border: 0.1rem solid gray;
+  background-color: white;
+}
+#bars{
+  width: 5rem;
+  rotate: 90deg;
+  margin-right: 3rem;
+}
+#remarks-setting{
+  margin-right: 10rem;
+  margin-top: 5rem;
+}
+#gae1{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.remarks-input{
+  width: 61vw !important;
+}
+.remarks-input::placeholder{
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+#button-remark{
+  display: flex;
+  gap: 1vw;
+  margin-top: 5rem;
+
+}
+.qw{
+  width: 35vw;
+  font-size: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+}
+.qwe{
+  background-color: black;
+  color: white;
+  border: none;
+}
+input[type="date"],input[type="time"]{
+  font-family: 'roboto';
+}
